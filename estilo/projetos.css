@@ -1,0 +1,207 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    color: white;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 50px;
+   position: absolute;
+  
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+b{
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header{
+    width: 80%;
+    height: 240px;
+    position: relative;
+    background-color: rgb(103, 12, 12);
+    border-radius: 20px;
+    margin-bottom: 12rem;
+    left: 10%;
+}
+
+.header  li {
+    display: inline;
+    margin-right: 3rem;
+    left: 800px;
+    position: relative;
+    font-size: 2rem; 
+}
+
+a:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+
+.header h1{
+    text-transform:uppercase ;
+    font-family: cursive;
+    position: relative;
+    left: 2rem;
+    top: 2rem;
+    font-size: 3rem;
+    color: rgb(252, 252, 183);
+}
+
+.container{
+    position: relative;
+    left: 6%;
+    width: 80%;
+    background-color: gray;
+    border-top: 15px solid #ffffff; 
+    align-items: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 10rem;
+   }
+
+.container h1 {
+    font-size: 2.5rem;
+}
+
+.container h2 {
+    font-size: 1.rem;
+}
+
+.neto-img{
+  left: 60%;
+  position: absolute;
+  height: 950px;
+  margin-top: 75px;
+}
+
+.lado-e{
+    width: 50%;
+}
+
+.footer {
+    background-color: grey;
+    padding: 2rem;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.subir{
+    position: fixed;
+    bottom: 100px;
+    right: 138px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #dd3333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seta{
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    padding: 7px;
+    display: inline-block;
+}
+
+.cima{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.ico{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 3px;
+}
+
+h4{
+    top: 25px;
+    position: relative;
+}
+
+.facebook-img , .instagram-img , .youtube-img {
+    width: 60px;
+    margin-right: 23px;
+    margin-top: 25px;
+}
+
+.programas{
+    position: relative;
+    display: block;
+    bottom: 100px;
+    left: 500px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.radio-logo-img{
+    width: 120px;
+    margin-top: -25px;
+}
+
+.donos-da-bola-img{
+    width: 120px;
+    margin-top: -25px;
+    margin-left: 100px;
+}
+
+.apito-final-img{
+    height: 120px;
+    margin-top: -25px;
+    margin-left: 100px;
+}
+
+.historia{
+    position: relative;
+    display: block;
+    bottom: 100px;
+    left: 330px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sccp{
+    width: 120px;
+    margin-top: -25px;
+    margin-left: 120px;
+}
