@@ -11,27 +11,27 @@ body{
 }
 
 #espaço{
-    padding: 0px 50px;
+    padding: 0px 60px;
 }
 
 h1{
-    font-size: 3rem;
-}
-
-h2{
-    font-size: 2.5rem;
-}
-
-h3{
     font-size: 2rem;
 }
 
-h4{
+h2{
+    font-size: 2rem;
+}
+
+h3{
     font-size: 1.5rem;
 }
 
+h4{
+    font-size: 1rem;
+}
+
 p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 a{
@@ -44,26 +44,29 @@ ul{
 }
 
 b{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .header{
     width: 80%;
-    height: 240px;
+    height: 150px;
     position: relative;
     background-color: rgb(103, 12, 12);
     border-radius: 20px;
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
     left: 10%;
+}
+
+.subir .fechar{
     display: none;
 }
 
 .header  li {
     display: inline;
     margin-right: 3rem;
-    left: 800px;
+    left: 550px;
     position: relative;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
 }
 
 a:hover{
@@ -77,32 +80,38 @@ a:hover{
     position: relative;
     left: 2rem;
     top: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(252, 252, 183);
 }
 
 .header-baixo{
     width: 100%;
-    height: 170px;
+    height: 120px;
     position: relative;
     background-color: rgb(103, 12, 12);
     margin-bottom: 12rem;
     left: 0;
+    top: 0;
     margin-top: -40px;
     position: fixed;
     z-index: 1;
+    display: none;
+}
+
+.abrir{
+    display: block;
 }
 
 .header-baixo  li {
     display: inline;
     margin-right: 3rem;
-    left: 1100px;
+    left: 800px;
     position: relative;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .header-baixo  ul {
-    margin-top: -55px;
+    margin-top: -30px;
 }
 
 .header-baixo h1{
@@ -111,7 +120,7 @@ a:hover{
     position: relative;
     left: 2rem;
     top: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(252, 252, 183);
 }
 
@@ -147,7 +156,7 @@ a:hover{
 .footer {
     background-color: grey;
     padding: 2rem;
-    width: 97.39%;
+    width: 96%;
     position: absolute;
     left: 0px;
 }
@@ -155,10 +164,10 @@ a:hover{
 .subir{
     position: fixed;
     bottom: 100px;
-    right: 138px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
     background-color: #dd3333;
     display: flex;
     flex-direction: row;
@@ -167,11 +176,19 @@ a:hover{
     cursor: pointer;
 }
 
+.subir:hover{
+    background-color: #FFF;
+}
+
 .seta{
     border: solid white;
-    border-width: 0 8px 8px 0;
-    padding: 7px;
+    border-width: 0 7px 7px 0;
+    padding: 6px;
     display: inline-block;
+}
+
+.cor-red{
+    border: #dd3333;
 }
 
 .cima{
@@ -183,7 +200,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 3px;
+    left: 5px;
 }
 
 h4{
@@ -192,7 +209,7 @@ h4{
 }
 
 .facebook-img , .instagram-img , .youtube-img {
-    width: 60px;
+    width: 40px;
     margin-right: 23px;
     margin-top: 25px;
 }
@@ -201,24 +218,25 @@ h4{
     position: relative;
     display: block;
     bottom: 100px;
-    left: 500px;
+    left: 300px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .radio-logo-img{
-    width: 120px;
+    width: 100px;
     margin-top: -25px;
+    margin-left: -90px;
 }
 
 .donos-da-bola-img{
-    width: 120px;
+    width: 100px;
     margin-top: -25px;
     margin-left: 100px;
 }
 
 .apito-final-img{
-    height: 120px;
+    height: 100px;
     margin-top: -25px;
     margin-left: 100px;
 }
@@ -227,13 +245,14 @@ h4{
     position: relative;
     display: block;
     bottom: 100px;
-    left: 330px;
+    left: 150px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: px;
 }
 
 .sccp{
-    width: 120px;
-    margin-top: -25px;
-    margin-left: 120px;
+    width: 100px;
+    margin-right: 100px;
+    position: relative;
+    margin-top: -14;
 }

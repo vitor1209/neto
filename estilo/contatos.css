@@ -7,29 +7,32 @@ body{
     color: white;
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0px 50px;
-   position: absolute;
-  
+    position: absolute;
+    align-items: center;
+}
+
+#espaço{
+    padding: 0px 60px;
 }
 
 h1{
-    font-size: 3rem;
-}
-
-h2{
-    font-size: 2.5rem;
-}
-
-h3{
     font-size: 2rem;
 }
 
-h4{
+h2{
+    font-size: 2rem;
+}
+
+h3{
     font-size: 1.5rem;
 }
 
+h4{
+    font-size: 1rem;
+}
+
 p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 a{
@@ -42,26 +45,29 @@ ul{
 }
 
 b{
-    font-size: 4rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
 }
 
 .header{
     width: 80%;
-    height: 240px;
+    height: 150px;
     position: relative;
     background-color: rgb(103, 12, 12);
     border-radius: 20px;
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
     left: 10%;
+   
+}
+.subir .fechar{
+    display: none;
 }
 
 .header  li {
     display: inline;
     margin-right: 3rem;
-    left: 800px;
+    left: 550px;
     position: relative;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
 }
 
 a:hover{
@@ -75,7 +81,47 @@ a:hover{
     position: relative;
     left: 2rem;
     top: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    color: rgb(252, 252, 183);
+}
+
+.header-baixo{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-color: rgba(118, 11, 11, 0.918);
+    margin-bottom: 12rem;
+    left: 0;
+    top: 0;
+    margin-top: -40px;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+.abrir{
+    display: block;
+}
+
+.header-baixo  li {
+    display: inline;
+    margin-right: 3rem;
+    left: 800px;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.header-baixo  ul {
+    margin-top: -30px;
+}
+
+.header-baixo h1{
+    text-transform:uppercase ;
+    font-family: cursive;
+    position: relative;
+    left: 2rem;
+    top: 2rem;
+    font-size: 2rem;
     color: rgb(252, 252, 183);
 }
 
@@ -91,7 +137,7 @@ a:hover{
     padding-left: 70px;
     padding-right: 70px;
     margin-bottom: 10rem;
-   }
+}
 
 .container h1 {
     font-size: 2.5rem;
@@ -104,13 +150,13 @@ a:hover{
 .neto2-img{
   position: absolute;
   left: 60%;
-  width: 440px;
-  margin-top: -125px;
+  width: 350px;
+  margin-top: -65px;
 }
 
 .card-email{
     width: 90%;
-    height: 100px;
+    height: 80px;
     background-color: rgb(53, 53, 53);
     padding-left: 50px;
     margin: 4rem;
@@ -121,7 +167,7 @@ a:hover{
 }
 
 .card-email .link{
-    margin-top: -30px;
+    margin-top: -18px;
 }
 
 .informaçoes{
@@ -134,7 +180,7 @@ a:hover{
    }
 
    label{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -145,7 +191,7 @@ a:hover{
     background-color: #fff;
     border-radius: 4px;
     color: #000000;
-    font-size: 20px;
+    font-size: 16px;
     border: 1px solid #ccc;
     padding: 6px 10px;
     line-height: 1.3;
@@ -165,6 +211,20 @@ a:hover{
         background-color: #dd3333;
    }
 
+   .enviar:hover{
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 20px;
+    font-weight: 900;
+    transition: all .2s ease-in-out;
+    color:#dd3333;
+    background-color:  #FFF ;
+}
+
    textarea{
         background-color: #fff;
         border-radius: 4px;
@@ -176,6 +236,10 @@ a:hover{
    }
 
    .caixa-info input:hover{
+    background-color: #ccc;            
+   }
+
+   .caixa-info textarea:hover{
     background-color: #ccc;            
    }
 
@@ -217,7 +281,7 @@ a:hover{
 .footer {
     background-color: grey;
     padding: 2rem;
-    width: 100%;
+    width: 96%;
     position: absolute;
     left: 0px;
 }
@@ -225,10 +289,10 @@ a:hover{
 .subir{
     position: fixed;
     bottom: 100px;
-    right: 138px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
     background-color: #dd3333;
     display: flex;
     flex-direction: row;
@@ -237,10 +301,14 @@ a:hover{
     cursor: pointer;
 }
 
+.subir:hover{
+    background-color: #FFF;
+}
+
 .seta{
     border: solid white;
-    border-width: 0 8px 8px 0;
-    padding: 7px;
+    border-width: 0 7px 7px 0;
+    padding: 6px;
     display: inline-block;
 }
 
@@ -253,7 +321,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 3px;
+    left: 5px;
 }
 
 h4{
@@ -262,7 +330,7 @@ h4{
 }
 
 .facebook-img , .instagram-img , .youtube-img {
-    width: 60px;
+    width: 40px;
     margin-right: 23px;
     margin-top: 25px;
 }
@@ -271,24 +339,25 @@ h4{
     position: relative;
     display: block;
     bottom: 100px;
-    left: 500px;
+    left: 300px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .radio-logo-img{
-    width: 120px;
+    width: 100px;
     margin-top: -25px;
+    margin-left: -90px;
 }
 
 .donos-da-bola-img{
-    width: 120px;
+    width: 100px;
     margin-top: -25px;
     margin-left: 100px;
 }
 
 .apito-final-img{
-    height: 120px;
+    height: 100px;
     margin-top: -25px;
     margin-left: 100px;
 }
@@ -297,13 +366,14 @@ h4{
     position: relative;
     display: block;
     bottom: 100px;
-    left: 330px;
+    left: 150px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: px;
 }
 
 .sccp{
-    width: 120px;
-    margin-top: -25px;
-    margin-left: 120px;
+    width: 100px;
+    margin-right: 100px;
+    position: relative;
+    margin-top: -14;
 }
